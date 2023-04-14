@@ -3,7 +3,6 @@
 
 # require_relative "config/application"
 require 'active_record/tasks/sqlite_database_tasks'
-require File.expand_path('../config/application', __FILE__)
 
 
 Rails.application.load_tasks
