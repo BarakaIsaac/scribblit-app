@@ -1,4 +1,6 @@
-class CreateUsers < ActiveRecord::Migration
+require 'content_type_validator'
+
+class CreateUsers < ActiveRecord::Migration[6.1]
   def change
     create_table :users do |t|
       ## Database authenticatable

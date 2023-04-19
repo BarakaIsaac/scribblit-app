@@ -1,4 +1,6 @@
-class CreateTaggings < ActiveRecord::Migration
+require 'content_type_validator'
+
+class CreateTaggings < ActiveRecord::Migration[6.1]
   def change
     create_table :taggings do |t|
       t.integer :note_id, null: false

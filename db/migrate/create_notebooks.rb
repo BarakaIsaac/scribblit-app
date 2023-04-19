@@ -1,4 +1,6 @@
-class CreateNotebooks < ActiveRecord::Migration
+require 'content_type_validator'
+
+class CreateNotebooks < ActiveRecord::Migration[6.1]
   def change
     create_table :notebooks do |t|
       t.string :title, null => false
